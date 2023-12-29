@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json": "concurrently --kill-others \"json-server --watch expenses.json --port 4000\"  \"json-server --watch users.json --port 4001\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "concurrently": "^8.2.2",
+    "json-server": "^0.17.4"
+  }
+}
