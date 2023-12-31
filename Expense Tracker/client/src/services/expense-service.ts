@@ -6,9 +6,9 @@ const getAllExpenseItems = async () => {
     return response.data;
 };
 
-const createNewExpense = async (newExpenseObj:IExpenseCreateItem) => {
-    const response = await axios.post("http://localhost:4000/expenses",newExpenseObj,{
-        headers:{
+const createNewExpense = async (newExpenseObj: IExpenseCreateItem) => {
+    const response = await axios.post("http://localhost:4000/expenses", newExpenseObj, {
+        headers: {
             "Content-Type": 'application/json'
         }
     })
@@ -17,6 +17,6 @@ const createNewExpense = async (newExpenseObj:IExpenseCreateItem) => {
 };
 
 export {
-         getAllExpenseItems
-        ,createNewExpense
-    }
+    getAllExpenseItems
+    , createNewExpense
+}

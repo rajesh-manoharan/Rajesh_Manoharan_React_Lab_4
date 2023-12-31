@@ -5,7 +5,7 @@ const getAllUserData = async () => {
     return await getAllusers();
 }
 
-const validateUser = (userName:string, password: string, userDetails: IUser[]) => {
+const validateUser = (userName: string, password: string, userDetails: IUser[]) => {
     let valid: string = 'INVALID';
     userDetails.forEach((user) => {
         if (user.userName === userName && user.password === password)
@@ -15,6 +15,7 @@ const validateUser = (userName:string, password: string, userDetails: IUser[]) =
 };
 
 
-export { getAllUserData,
-         validateUser
+export {
+    getAllUserData,
+    validateUser
 }
